@@ -12,7 +12,10 @@ Copyright (c) 2015 Dale Corns. All rights reserved.
 
     </style>
     <template>
+        <input value="{{prop::input}}">
+        <input value="{{prop::input}}">
         <content></content>
+        <label>{{prop}}</label>
     </template>
 
 </dom-module>
@@ -25,7 +28,7 @@ Copyright (c) 2015 Dale Corns. All rights reserved.
             prop:{
                 type:String, //can be type String, Object, Array, Number
                 notify:true, //data binding
-                value: [], //default value
+                value: 'Hello World', //default value
                 observer: '_doSomeThing' //name of function to run when property changes the _ means it is private
             }
 
