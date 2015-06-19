@@ -1,0 +1,66 @@
+<!--
+@license
+Copyright (c) 2015 Dale Corns. All rights reserved.
+-->
+<link rel="import" href="../polymer/polymer.html">
+<dom-module id="simple-element">
+    <style>
+        :host {
+            display: block;
+            box-sizing: border-box;
+        }
+
+    </style>
+    <template>
+        <content></content>
+    </template>
+
+</dom-module>
+
+<script>
+    Polymer({
+        is: 'simple-element',
+
+        properties: {
+            prop:{
+                type:String, //can be type String, Object, Array, Number
+                notify:true, //data binding
+                value: [], //default value
+                observer: '_doSomeThing' //name of function to run when property changes the _ means it is private
+            }
+
+        },
+        // Element Lifecycle
+
+        ready: function() {
+            // `ready` is called after all elements have been configured, but
+            // propagate
+            //es bottom-up. This element's children are ready, but parents
+            // are not.
+            //
+            // This is the point where you should make modifications to the DOM (when
+            // necessary), or kick off any processes the element wants to perform.
+        },
+
+        attached: function() {
+            // `attached` fires once the element and its parents have been inserted
+            // into a document.
+            //
+            // This is a good place to perform any work related to your element's
+            // visual state or active behavior (measuring sizes, beginning animations,
+            // loading resources, etc).
+
+        },
+
+        detached: function() {
+            // The analog to `attached`, `detached` fires when the element has been
+            // removed from a document.
+            //
+            // Use this to clean up anything you did in `attached`.
+        },
+        _doSomeThing: function(){
+
+        }
+
+    });
+</script>

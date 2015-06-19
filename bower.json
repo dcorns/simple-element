@@ -1,0 +1,20 @@
+{
+  "name": "simple-element",
+  "version": "0.0.0",
+  "authors": [
+    "Dale Corns <drcorns@hotmail.com>"
+  ],
+  "description": "An example of making a custom element using Polymer",
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#~1.0.4"
+  }
+}
