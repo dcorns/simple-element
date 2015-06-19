@@ -29,7 +29,13 @@ Create your dom module tag for wrapping your elements dom. Be sure to use your e
   
   `<script>
     Polymer({
+        properties{
+        }
     });
   </script>`
  
+Fill out the rest of the element html file. See scaffolding branch for example of it and the remaining files.
+
+Create a demo folder and add index.html for development and demo. See scaffolding branch for details.
+
 
